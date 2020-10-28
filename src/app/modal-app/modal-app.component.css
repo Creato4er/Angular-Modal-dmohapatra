@@ -1,0 +1,102 @@
+.custom-modal-backdrop {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1031;
+  background: black;
+  opacity: 0.7;
+  /* animation: pop-out normal cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s; */
+}
+
+.custom-modal-container {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 937px;
+  z-index: 1032;
+  background: white;
+  /* transform: translateX(0); */
+  /* animation: zero-width normal cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s; */
+  /* animation: sketchIn 0.5s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; */
+  overflow: auto;
+}
+.custom-modal-container-2 {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 607px;
+  z-index: 1032;
+  background: white;
+  /* transform: translateX(0); */
+  /* animation: zero-width normal cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s; */
+  /* animation: sketchIn 0.5s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; */
+  overflow: auto;
+}
+
+@keyframes pop-out {
+  0% {
+    opacity: 0;
+    pointer-events: none;
+    /* transform: scale(0); */
+  }
+
+  100% {
+    /* opacity: 1; */
+    /* width: 100%; */
+  }
+}
+
+@keyframes zero-width {
+  0% {
+    transform: scaleX(0.5);
+    opacity: 0.5;
+    pointer-events: none;
+    transform: translateX(150px);
+  }
+  70% {
+    /* transform: scaleX(0.8); */
+    pointer-events: none;
+  }
+}
+@keyframes sketchIn {
+  0% {
+    stroke-dashoffset: 778;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes sketchOut {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 778;
+  }
+}
+
+.custom-modal-header {
+  height: 30px;
+  width: 100%;
+  padding: 10px;
+}
+
+.f-right {
+  float: right;
+}
+
+
+.open {
+  width:700px;
+}
+
+.close {
+  width: 200px;
+}

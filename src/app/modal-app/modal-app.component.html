@@ -1,0 +1,10 @@
+<ng-container *ngIf="showModal">
+  <div class="custom-modal-backdrop" (click)="closeModalWindow()"></div>
+  <div [class]="activeClass" @myInsertRemoveTrigger>
+    <div class="custom-modal-header">
+      <!-- <clr-icon class="f-right" shape="times" (click)="closeModalWindow()" size="22"></clr-icon> -->
+      <button (click)="resize()" >hehe</button>
+    </div>
+    <ng-content></ng-content>
+  </div>
+</ng-container>
